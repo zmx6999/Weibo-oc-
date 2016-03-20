@@ -1,0 +1,41 @@
+//
+//  PrefixHeader.pch
+//  Weibo
+//
+//  Created by zmx on 16/3/11.
+//  Copyright © 2016年 zmx. All rights reserved.
+//
+
+
+#import "IFSBaseViewController.h"
+#import "IFSAccountViewModel.h"
+#import "IFSNetworkManager.h"
+#import "UIView+IFS.h"
+
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "SVProgressHUD.h"
+#import "Masonry.h"
+#import "FFLabel-Swift.h"
+#import "MJRefresh.h"
+
+
+#define ScreenBounds ([UIScreen mainScreen].bounds)
+#define ScreenSize (ScreenBounds.size)
+#define ScreenW (ScreenSize.width)
+#define ScreenH (ScreenSize.height)
+
+#define ThemeColor [UIColor orangeColor]
+
+#define AppKey @"2562191751"
+#define AppSecret @"c2d32fcfdd115702ef11a7e3cc6ff6cb"
+#define RedirectUri @"http://www.baidu.com"
+
+#define BaseUrlStr @"https://api.weibo.com"
+
+#define SharedNetworkManager [IFSNetworkManager sharedNetworkManager]
+
+#define StatusMargin 12
+#define StatusPictureMargin 5
+
+#define SharedUser [IFSAccountViewModel sharedAccount]
